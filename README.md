@@ -4,6 +4,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 And The purpose of this project is to showing the #Meeting Availablity of Any user. 
 
+## Clone Repo
+
+Run `git clone {repo_url}` for a cloning the project.
+
+## installing Dependencies 
+
+Run `npm install` in root folder of project.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
