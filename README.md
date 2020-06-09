@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
 
-And The perpose of this project is to showing the #Meeting Availablity of Any user. 
+And The purpose of this project is to showing the #Meeting Availablity of Any user. 
 
 ## Development server
 
