@@ -1,1 +1,1 @@
-# meeting-availablity-nodeJs
+# meeting-availablity-angular
