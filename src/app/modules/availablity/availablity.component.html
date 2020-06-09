@@ -1,0 +1,53 @@
+<!-- Form to Selct User availablity -->
+
+<div class="container-fluid p-4">
+ 
+  <form [formGroup]="form">
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Start Time</label>
+      <div class="col-sm-10 col-md-6">
+        <input class="form-control" readonly formControlName="startTime" [owlDateTimeTrigger]="strtTime" [owlDateTime]="strtTime">
+        <owl-date-time #strtTime></owl-date-time>
+        <span class="error-msg" *ngIf="formControl.startTime.touched && formControl.startTime.errors">This is required</span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">End Time</label>
+      <div class="col-sm-10 col-md-6">
+        <input class="form-control" readonly formControlName="endTime" [owlDateTimeTrigger]="ndTime" [owlDateTime]="ndTime">
+        <owl-date-time #ndTime></owl-date-time>
+        <span class="error-msg" *ngIf="formControl.endTime.touched && formControl.endTime.errors">This is required</span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label"></label>
+      <div  class="col-sm-10 col-md-6">
+        <button type="button" class="btn btn-primary" [disabled]="formControl.invalid" (click)="addAvailablity()">Add Availablity</button>
+      </div>
+    </div>
+  </form>
+  
+</div>
+
+<!--Button for Get availablity -->
+<div class="container-fluid p-4">
+  <button class="btn btn-primary text-center m-1" (click)="getAvailability()">Get Availablity</button>
+</div>
+
+<!-- Table to Show User Availablity -->
+<div class="container-fluid">
+  <div>
+    <table class="table table-bordered">
+      <tr class="thead-light">
+        <th scope="col" class="align-middle">Start Time</th>
+        <th scope="col" class="align-middle">End Time</th>
+      </tr>
+      <tbody>
+        <tr *ngFor="let data of availablityData">
+          <td class="align-middle">{{data.startTime | date:'short'}}</td>
+          <td class="align-middle">{{data.endTime | date:'short'}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
