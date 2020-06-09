@@ -8,7 +8,7 @@ And The purpose of this project is to showing the #Meeting Availablity of Any us
 
 Run `git clone {repo_url}` for a cloning the project.
 
-## installing Dependencies 
+## Installing Dependencies 
 
 Run `npm install` in root folder of project.
 
