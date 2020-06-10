@@ -4,6 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 And The purpose of this project is to showing the #Meeting Availablity of Any user. 
 
+## Prerequisite
+ Before run you have to create user by using http://localhost:3000/createUser url then you can get data on behalf of user.
+ 
 ## Clone Repo
 
 Run `git clone {repo_url}` for a cloning the project.
