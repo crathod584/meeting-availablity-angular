@@ -51,7 +51,7 @@ export class AvailablityComponent implements OnInit {
 
   getUser(){
     this.apiService.getUser().subscribe((res) =>{
-      this.userId = res[1]._id;
+      this.userId = res[0]._id;
     }, (err) => {
       alert(err.error.text);
     });
